@@ -4,7 +4,7 @@ Distributed shared bookmarking using linked data
 
 ## Overview
 
-This library provides a frontend for browsing a large number of bookmarks that can be distributed over any number of sites both in terms of where the bookmark collections live and what the bookmarks point to.  Please take a look at the included <a href="https://jeff-zucker.solidcommunity.net/OpenCultureBrowser/">Open Culture Browser</a> - an example app that uses linked-bookmarks to display a mashup of tens of thousands of media items from several different sources.
+This library provides a frontend for browsing a large number of bookmarks that can be distributed over any number of sites both in terms of where the bookmark collections live and what the bookmarks point to.  Please take a look at the included <a href="http://jeff-zucker.github.io/linked-bookmarks/">Open Culture Browser</a> - an example app that uses linked-bookmarks to display a mashup of tens of thousands of media items from several different sources.
 
 The basic idea is that the bookmarks are arranged using topic trees based on the bookmark ontology's subTopicOf and hasTopic properties.  Any bookmark collection can include any other bookmark collection just by declaring it a subTopic.  For example:
 ```turtle
