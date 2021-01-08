@@ -16,7 +16,7 @@ The basic idea is that the bookmarks are arranged using topic trees based on the
     a bk:topic ;
     bk:subTopicOf <https://ME.example.org/animals.ttl#Animals> .
 ```
-For the user, your tree of Bird bookmarks is now seemlessly a subtree of my Animal bookmarks collection.
+For the user, your tree of Bird bookmarks is now seamlessly a subtree of my Animal bookmarks collection.
 
 ## Usage
 
