@@ -4,7 +4,7 @@ Distributed shared bookmarking using linked data
 
 ## Overview
 
-This library provides a frontend for browsing a large number of bookmarks that can be distributed over any number of sites both in terms of where the bookmark collections live and what the bookmarks point to.  Please take a look at <a href="https://jeff-zucker.solidcommunity.net/OpenCultureBrowser/">Open Culture Browser</a> for an example app that uses linked-bookmarks to display a mashup of tens of thousands of media items from several different sources.
+This library provides a frontend for browsing a large number of bookmarks that can be distributed over any number of sites both in terms of where the bookmark collections live and what the bookmarks point to.  Please take a look at the included <a href="https://jeff-zucker.solidcommunity.net/OpenCultureBrowser/">Open Culture Browser</a> - an example app that uses linked-bookmarks to display a mashup of tens of thousands of media items from several different sources.
 
 The basic idea is that the bookmarks are arranged using topic trees based on the bookmark ontology's subTopicOf and hasTopic properties.  Any bookmark collection can include any other bookmark collection just by declaring it a subTopic.  For example:
 ```turtle
@@ -26,6 +26,6 @@ Copy the files to a local folder and change where the data-component in index.ht
 
 There, should of course, be tools to save and manage bookmarks to accompany the browser. It will be a while before I have time to make those so if you'd like to create them, please have at it and let me know if you need help.
 
-There should also be semantic tools to search and filter the bookmarks. See <a href="https://solidos.solidcommunity.net/public/2021/01%20Building%20Solid%20Apps%20which%20use%20Public%20Data.html"> for a related discussion.
+There should also be semantic tools to search and filter the bookmarks. See <a href="https://solidos.solidcommunity.net/public/2021/01%20Building%20Solid%20Apps%20which%20use%20Public%20Data.html">a related discussion</a>.
 
 &copy; 2020, Jeff Zucker, may be freely used with an MIT open source license
