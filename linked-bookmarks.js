@@ -21,7 +21,7 @@ export class OpenCultureBrowser {
     let book = $rdf.Namespace("http://www.w3.org/2002/01/bookmark#")
     const rdfs= $rdf.Namespace('http://www.w3.org/2000/01/rdf-schema#')
     topic = await this.loadUnlessLoaded(topic);
-    let topicTitle = this.store.any( topic, rdfs('label') )
+    let topicTitle = this.store.any( topic, rdfs('label'),null,topic.doc() )
     topicTitle = (typeof topicTitle ==="undefined") ? "???" : topicTitle.value
     let span = document.createElement('SPAN')
     span.appendChild(document.createTextNode(topicTitle))
@@ -51,9 +51,9 @@ export class OpenCultureBrowser {
       ul2.classList.add('nested')
       for(let b in bookmarks){
         let bookmark = bookmarks[b]
-        let  bookmarkTitle = this.store.any( bookmark, rdfs('label') )
+        let  bookmarkTitle = this.store.any( bookmark, rdfs('label'),null,topic.doc() )
         bookmarkTitle = bookmarkTitle ? bookmarkTitle.value : "???"
-        let bookmarkLink  = this.store.any( bookmark, book('recalls') )
+        let bookmarkLink  = this.store.any( bookmark, book('recalls'),null,topic.doc() )
         let bookElement = document.createElement("LI")
         bookElement.classList.add('item')
         bookElement.addEventListener("click", async function() {

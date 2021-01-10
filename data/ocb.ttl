@@ -10,4 +10,14 @@
 <images.ttl#More> bk:subTopicOf :OpenCultureBrowser.
 <music.ttl#Music> bk:subTopicOf :OpenCultureBrowser.
 <movies.ttl#Movies> bk:subTopicOf :OpenCultureBrowser.
+:audiobooks bk:subTopicOf :OpenCultureBrowser.
+
+:audiobooks a bk:Topic; rdfs:label "Spoken Word".
+
+<poetry.ttl#poetry> bk:subTopicOf :audiobooks.
+<fiction.ttl#fiction> bk:subTopicOf :audiobooks.
+<society.ttl#society> bk:subTopicOf :audiobooks.
+
+
+
 
